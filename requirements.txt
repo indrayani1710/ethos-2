@@ -1,0 +1,11 @@
+# firmware dependancy
+mfrc522-python==0.0.5
+RPi.GPIO==0.7.1
+
+# PySide dependancy
+PySide6==6.6.0
+PySide6-Addons==6.6.0
+PySide6-Essentials==6.6.0
+
+# Envoirnment configuration dependancy
+python-dotenv==1.0.0
