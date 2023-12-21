@@ -16,7 +16,7 @@ def main():
     
     app = QApplication(sys.argv)
     config = Config()  # Assuming Config is a class that extends QMainWindow or QWidget
-    window = config.main_window()  # Replace getMainWindow with the appropriate method to get your QMainWindow instance
+    window = config.get_main_window()  # Replace getMainWindow with the appropriate method to get your QMainWindow instance
     print("SplashWindow created")
     window.showFullScreen()  # This should set the window to full screen
     sys.exit(app.exec_())
