@@ -2,7 +2,7 @@ import sys
 import os
 from PySide6.QtWidgets import QApplication
 from PySide6.QtCore import Qt
-from gui.device_splashscreen import SplashWindow
+from gui.device_splashscreen import Config
 
 def main():
     print("Ethos firmware started")
@@ -18,7 +18,7 @@ def main():
     app = QApplication(sys.argv + ['--platform', 'eglfs'])
     
     # Set the window to be fullscreen on the specified display
-    window = SplashWindow()
+    window = Config()
     window.setWindowState(Qt.WindowFullScreen)
     
     print("SplashWindow created")

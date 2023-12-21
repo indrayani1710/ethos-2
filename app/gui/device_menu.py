@@ -9,7 +9,7 @@ from PySide6.QtWidgets import (
 from PySide6.QtGui import QPixmap, QFont
 from PySide6.QtCore import Qt, QObject, QEvent, QTimer
 from .utilities.imgbuttonBtext import imgbuttonBtext
-from .utilities.imgbutton import imgbutton
+from .utilities.imgbutton import img_button
 from .utilities.virtualkeyboardtest import open_keyboard
 import os
 
