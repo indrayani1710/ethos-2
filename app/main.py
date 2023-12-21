@@ -14,17 +14,15 @@ def main():
     os.environ['QT_EGLFS_PHYSICAL_WIDTH'] = '86'  # Adjust based on the actual display width
     os.environ['QT_EGLFS_PHYSICAL_HEIGHT'] = '64'  # Adjust based on the actual display height
     
-    # Create the application object with appropriate flags
-    app = QApplication(sys.argv + ['--platform', 'eglfs'])
-    
-    # Set the window to be fullscreen on the specified display
-    window = Config()
-    window.setWindowState(Qt.WindowFullScreen)
-    
+    app = QApplication(sys.argv)
+    config = Config()  # Assuming Config is a class that extends QMainWindow or QWidget
+    window = config.getMainWindow()  # Replace getMainWindow with the appropriate method to get your QMainWindow instance
     print("SplashWindow created")
-    
-    window.show()
+    window.showFullScreen()  # This should set the window to full screen
     sys.exit(app.exec_())
+    
+    
+
 
 if __name__ == "__main__":
     main()
